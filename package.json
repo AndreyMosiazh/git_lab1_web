@@ -1,0 +1,19 @@
+{
+  "name": "lab1_git",
+  "version": "1.0.0",
+  "description": "lab4_web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreyMosiazh/git_lab1_web.git"
+  },
+  "author": "Mosiazh Andrii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreyMosiazh/git_lab1_web/issues"
+  },
+  "homepage": "https://github.com/AndreyMosiazh/git_lab1_web#readme"
+}
