@@ -1,6 +1,6 @@
 const express = require('express');
-const productRoutes = require('./product.routes.js');
 const userRouter = require('./user/user.router.js');
+const productRouter = require('./product/product.router');
 const { logRequest } = require('./middleware');
 const bodyParser = require('body-parser');
 const { errorResponder } = require('./error.middleware');
@@ -10,9 +10,13 @@ const PORT = 3000;
 
 app.use(bodyParser.json());
 app.use(logRequest);
+//app.use(productRouter);
 
-app.use(productRoutes);
-app.use(userRouter);
+app.use('/products', productRouter);
+
+//app.use(userRouter);
+
+app.use('/users', userRouter);
 
 app.use(errorResponder);
 
